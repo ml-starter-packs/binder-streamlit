@@ -1,4 +1,4 @@
 # get app and requirements any way you want here.
-pip install streamlit==1.0.0
-echo "import streamlit as st" > app.py
-echo "st.text('hello, world')" >> app.py
+curl https://raw.githubusercontent.com/streamlit/example-app-time-series-annotation/main/requirements.txt > requirements.txt
+pip install -r requirements.txt
+curl https://raw.githubusercontent.com/streamlit/example-app-time-series-annotation/main/streamlit_app.py > app.py
