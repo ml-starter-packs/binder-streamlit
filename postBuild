@@ -1,6 +1,6 @@
 # get app and requirements any way you want here.
-curl https://raw.githubusercontent.com/streamlit/example-app-time-series-annotation/main/requirements.txt > requirements.txt
-pip install -r requirements.txt
-curl https://raw.githubusercontent.com/streamlit/example-app-time-series-annotation/main/streamlit_app.py > app.py
-# upgrade click
+pip install streamlit==1.5.0
 pip install click==8.1.0
+echo "import streamlit as st" > app.py
+echo "st.text('hello, world')" >> app.py
+echo "st.slider('how neat is this?', 0, 100)" >> app.py
