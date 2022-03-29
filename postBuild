@@ -2,5 +2,5 @@
 curl https://raw.githubusercontent.com/streamlit/example-app-time-series-annotation/main/requirements.txt > requirements.txt
 pip install -r requirements.txt
 curl https://raw.githubusercontent.com/streamlit/example-app-time-series-annotation/main/streamlit_app.py > app.py
-# downgrade streamlit
-pip install streamlit==1.2.0
+# upgrade click
+pip install click==8.1.0
