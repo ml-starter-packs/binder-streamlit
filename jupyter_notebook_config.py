@@ -15,4 +15,18 @@ c.ServerProxy.servers = {
         'title': 'VSCode',
         },
   },
-}
+  'app': {
+    'command': [
+		'streamlit',
+		'--server.address', '0.0.0.0',
+		'--server.port', '8080',
+	        '--server.enableCORS', 'False',
+	        '--server.enableXsrfProtection', 'False',
+	],
+    'port': 8080,
+    'absolute_url': False,
+    'new_browser_tab': True,
+    'launcher_entry': {
+        'title': 'Streamlit',
+        },
+  },
