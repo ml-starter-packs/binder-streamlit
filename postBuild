@@ -1,4 +1,4 @@
 # get app and requirements any way you want here.
 pip install streamlit
 echo "import streamlit as st" > app.py
-echo "st.text("hello, world")" >> app.py
+echo "st.text('hello, world')" >> app.py
