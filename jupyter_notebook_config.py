@@ -30,3 +30,4 @@ c.ServerProxy.servers = {
         'title': 'Streamlit',
         },
   },
+}
