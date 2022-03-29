@@ -1,6 +1,5 @@
 # get app and requirements any way you want here.
-pip install streamlit==1.0.0
-pip install click==8.1.0
+pip install streamlit==1.5.0
 echo "import streamlit as st" > app.py
 echo "st.text('hello, world')" >> app.py
 echo "st.slider('how neat is this?', 0, 100)" >> app.py
