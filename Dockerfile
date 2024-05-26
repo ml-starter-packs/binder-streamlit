@@ -3,6 +3,7 @@ FROM python:3.9-slim
 RUN apt-get update -q && \
 	apt-get install -yqq \
 	curl \
+	dumb-init \
 	git \
 	htop \
 	nginx \
@@ -37,4 +38,6 @@ COPY postBuild /tmp
 COPY jupyter_notebook_config.py /home/${NB_USER}/.jupyter/
 RUN sh /tmp/postBuild
 
-CMD streamlit run app.py --server.address 0.0.0.0 --server.port 8501 --server.enableCORS False --server.enableXsrfProtection False
+RUN echo "streamlit run app.py --server.address 0.0.0.0 --server.port 8501 --server.enableCORS False --server.enableXsrfProtection False --browser.gatherUsageStats False" > start.sh
+RUN chmod +x start.sh
+CMD dumb-init ./start.sh
