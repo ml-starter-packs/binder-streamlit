@@ -15,7 +15,7 @@ To use it, run
 
 ```bash
 docker build -t streamlit-demo .
-docker run --rm --name demo-env -p 8501:8501 streamlit-demo
+docker run --rm -ti --name demo-env -p 8501:8501 streamlit-demo
 ```
 
 or using `docker-compose.yml`:
