@@ -11,6 +11,7 @@ c.ServerProxy.servers = {
     'port': 5000,
     'absolute_url': False,
     'new_browser_tab': True,
+    'timeout': 10,
     'launcher_entry': {
         'title': 'VSCode',
         },
@@ -26,6 +27,7 @@ c.ServerProxy.servers = {
     'port': 8080,
     'absolute_url': False,
     'new_browser_tab': True,
+    'timeout': 10,
     'launcher_entry': {
         'title': 'Streamlit',
         },
