@@ -23,7 +23,7 @@ c.ServerProxy.servers = {
     'port': 8501,
     'absolute_url': False,
     'new_browser_tab': True,
-    'timeout': 10,
+    'timeout': 30,
     'launcher_entry': {
         'title': 'Streamlit',
         },
