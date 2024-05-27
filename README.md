@@ -33,3 +33,8 @@ services:
       - "8501:8501"
     command: streamlit run app.py --server.address 0.0.0.0 --server.port 8501 --server.enableCORS False --server.enableXsrfProtection False
  ```
+
+
+## A Note on Reproducibility
+To ensure future reproducibility, it is advised to pin the requirements in `postBuild` and `requirements.txt` to exact package versions.
+The core dependencies to function with binder.org evolve (slowly) over time, and so they have been left unpinned here.
