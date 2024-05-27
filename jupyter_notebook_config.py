@@ -18,7 +18,7 @@ c.ServerProxy.servers = {
  #  },
   'app': {
     'command': [
-		'./start.sh'
+		'sh', 'start.sh'
 	],
     'port': 8501,
     'absolute_url': False,
